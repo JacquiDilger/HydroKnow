@@ -128,12 +128,12 @@ nav ul li a:hover {
 }
 
 .bigImage {
-    transition:transform 0.80s ease;
+    transition: transform 0.80s ease;
 }
 
 .bigImage:hover {
-    -webkit-transform:scale(1.5);
-    transform:scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .team table td {
@@ -150,15 +150,11 @@ section {
     flex-direction: column;
 }
 
-.bottomNavPrev {
-    margin-bottom: 16px;
-    margin-left: 16px;
+.bottomNavButtons button:nth-child(1) {
     float: left;
 }
 
-.bottomNavNext {
-    margin-bottom: 16px;
-    margin-right: 16px;
+.bottomNavButtons button:nth-child(2) {
     float: right;
 }
 
@@ -215,6 +211,7 @@ section {
     width: 50%;
     transform: skew(0deg, -30deg);
 }
+
 @keyframes move {
     25% {
         opacity: 1;
@@ -233,6 +230,7 @@ section {
         transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
 }
+
 .container {
     position: absolute;
     width: 24px;
@@ -244,6 +242,7 @@ section {
     /* margin-top: 350px; */
     margin-top: 34vh;
 }
+
 .text {
     display: block;
     margin-top: 75px;
@@ -257,7 +256,6 @@ section {
 }
 
 
-
 /* CSS */
 .fancyButton {
     align-items: center;
@@ -265,11 +263,11 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border - box;
+    box-sizing: border -box;
     color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
-    display: inline - flex;
-    font-family: system - ui, -apple - system, system - ui, "Helvetica Neue", Helvetica, Arial, sans - serif;
+    display: inline -flex;
+    font-family: system -ui, -apple -system, system -ui, "Helvetica Neue", Helvetica, Arial, sans -serif;
     font-size: 16px;
     font-weight: 600;
     justify-content: center;
@@ -306,7 +304,7 @@ section {
 }
 
 .personalityPic {
-    float:right;
+    float: right;
     padding-left: 30px;
 }
 
