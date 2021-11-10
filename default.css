@@ -84,7 +84,7 @@ nav ul li a {
     display: block;
     color: #212529;
     text-align: center;
-    padding: 16px;
+    padding: 16px 14px;
     text-decoration: none;
 }
 
@@ -319,3 +319,41 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/** vertical navbar on detailed description page **/
+.verticalNav {
+    padding-top: 100px;
+}
+
+.verticalNav ul {
+    list-style-type: none;
+    margin: 20px 0 0;
+    padding: 0;
+    width: 170px;
+    background-color: white;
+    position: fixed;
+    overflow: auto;
+    box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.15);
+}
+
+.verticalNav ul li {
+    text-align: center;
+}
+
+.verticalNav ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.verticalNav ul li a:hover {
+    background-color: #0835D7;
+    color: white;
+}
+
+.section {
+    padding-top: 100px;
+}
+
