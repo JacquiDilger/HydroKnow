@@ -118,30 +118,55 @@
 
         <h2 id="plans_and_progress" class="section">Plans and Progress</h2>
         <p style="text-align: justify">
-            The HydroKnow project was born from an individual assignment conceived of by a member of our group, Will,
-            before
-            it was keenly adopted by the other members of the team as a major assignment. Working in the plumbing
-            industry,
-            Will has an understanding of water infrastructure and associated equipment. Will also has a strong interest
-            in
-            using technology to deliver real benefits to society, and so was naturally inspired to identify innovative
-            ways
-            that technology could be used in connection with his knowledge of the water and plumbing industry.</p>
+            The HydroKnow project was born from an individual assignment conceived of by a member of our group, Will, 
+            before it was keenly adopted by the other members of the team as a major assignment. Working in the plumbing 
+            industry, Will has an understanding of water infrastructure and associated equipment. Will also has a strong 
+            interest in using technology to deliver real benefits to society, and so was naturally inspired to identify 
+            innovative ways that technology could be used in connection with his knowledge of the water and plumbing industry.</p>
 
         <p style="text-align: justify">
-            Like many Australians, the HydroKnow team was shocked and saddened by the devastation wreaked during the
-            2019/2020 bushfires. With images of injured wildlife and destroyed homes and businesses a frequent reminder
-            of
-            these events, the team embraced Will’s vision of using technology in conjunction with existing water
-            infrastructure to support the emergency services workers efforts against the bushfires. Will envisaged the
-            firefighters battling these horrific bushfires having real-time visibility of the plentiful supplies of
-            water
-            held in the water tanks that he saw in his job day to day. Existing technologies of small computer devices
-            and
-            sensors connected to the cloud (broadly the concept of the Internet of Things) offered a means for
-            technology to
-            realise this vision, and so the idea grew. </p>
+            Like many Australians, the HydroKnow team was shocked and saddened by the devastation wreaked during the 2019/2020 
+            bushfires. With images of injured wildlife and destroyed homes and businesses a frequent reminder of these events, 
+            the team embraced Will’s vision of using technology in conjunction with existing water infrastructure to support the 
+            emergency services workers efforts against the bushfires. Will envisaged the firefighters battling these horrific 
+            bushfires having real-time visibility of the plentiful supplies of water held in the water tanks that he saw in his 
+            job day to day. Existing technologies of small computer devices and sensors connected to the cloud (broadly the concept 
+            of the Internet of Things) offered a means for technology to realise this vision, and so the idea grew.</p>
 
+        <h4>Initial Project Conception</h4>
+
+        <p style="text-align: justify">
+        Once our team decided to undertake Will’s concept, we set out to identify the major individual components required of the 
+        project, and layout the proposed final product objectives. From this overall plan, key milestones and achievable elements 
+        were identified that would be undertaken during the initial stages of development in the first six weeks.</p>
+
+        <h4>Hardware Trials and Proof-of-Concept</h4>
+        
+        <p style="text-align: justify">The key functional components of the user hardware, namely a sensor and single-board computer, 
+            were identified early in the project as something the team would work towards developing into a working model. Two group 
+            members acquired commercially available Raspberry Pi 4 computers as well as peripheral ultrasonic sensors. This componentry 
+            represents the bulk of the planned final hardware elements, only absent a suitable weather-proof housing and the addition of 
+            expanded connectivity and power supply options, elements that are intended for future development milestones.</p>
+
+        <p style="text-align: justify;">Using this equipment, Jarrad and Will undertook the work to establish sensor reading outputs and data compiling. Collecting these measurements was viewed as the first critical feasibility study and proof-of-concept to the whole project, as the data would be critical to the rest of the project goals. Successful readings recorded within the devices’ local storage and OS were confirmed in the initial weeks of the project, after which point work with the hardware progressed to recording data to a central location. Demonstrating the ability to record sensor readings would demonstrate the feasibility of eventually recording data to a cloud-based server environment. This was viewed as the next critical element of the project, required to enable both HydroKnow users to remotely access readings, but more importantly for emergency services to access current or recent water supply information.</p>
+
+        <p style="text-align: justify;">Towards the end of the initial allotted project time, it became apparent that progressing to the next step of recording data to a cloud location would require further investigations, trials, and upskilling that were beyond the capacity of the team in the time available. Having established the sensor readings, the team were satisfied that these next steps would be achievable in due course of the project in the following 10-week period.</p>
+
+        <h4>Application Design</h4>
+
+        <p style="text-align: justify;">Considering that the user applications will form the vital link for emergency services to have visibility of available water in response to bushfires, this was an element that the team felt was important to represent in these initial stages of the project. While the specific operation of the proposed application would not entail overly complex functionality, the team recognised that it did not possess the skillsets, or the time to establish those skills, required to develop a working model within the initial project development stages.</p>
+
+        <p style="text-align: justify;">For this reason, HydroKnow opted to focus on developing indicative design elements of a mobile application, as well a graphical representation of its intended functionality in the form of a mock-up demonstrator which would serve as the basis for continued advanced development in later stages of the project. Jarrad undertook this development using the freely available Figma application, demonstrating the key functions to be used by users, and importantly, the emergency services portal.</p>
+
+        <p style="text-align: justify;">In addition to the design mock-up, research was undertaken to determine how the application would be implemented. HydroKnow identified that both mobile and web-based applications would be needed to provide flexible accessibility to both users and emergency services. Regarding the mobile applications, it was identified that adopting a cross-platform (iOS and Android) approach to development would provide the most flexibility and efficiency in the development and into sustainment stages of the project. Tools and technology were identified that would meet these requirements, described in detail in the Tools and Technology section of this report.</p>
+
+        <h4>Server Hosting and Processing</h4>
+        
+        <p style="text-align: justify;">It was identified that a significant portion of the service’s functionality would require remote hosting, particularly to enable the real-time visibility across the disparate sensors that emergency services require. Similarly to the user application development, the backend processing and storage elements were approached as a research element throughout this initial development stage, intended to inform the implementation into the later stages of the project.</p>
+
+        <p style="text-align: justify;">Cloud hosted services that provide specific Internet of Things management tools were selected as an efficient approach to the project’s development. As well as offering the infrastructure to maintain the cloud-based functions of the HydroKnow service, they offer many of the backend software tools required to implement and maintain it, all of which is scalable as uptake increases.</p>
+
+        
         <h2 id="roles" class="section">Roles</h2>
         <p style="text-align: justify">
             We made the decision not to delegate specific roles to each member, as we believed the work could be split
