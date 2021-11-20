@@ -50,6 +50,7 @@
         <ul>
             <li><a href="#aims">Aims</a></li>
             <li><a href="#plans_and_progress">Plans and Progress</a></li>
+            <li><a href="#product_description">Product Description</a></li>
             <li><a href="#roles">Roles</a></li>
             <li><a href="#scopes_and_limits">Scopes and Limits</a></li>
             <li><a href="#tools_and_technology">Tools and Technology</a></li>
@@ -166,7 +167,102 @@
 
         <p style="text-align: justify;">Cloud hosted services that provide specific Internet of Things management tools were selected as an efficient approach to the project’s development. As well as offering the infrastructure to maintain the cloud-based functions of the HydroKnow service, they offer many of the backend software tools required to implement and maintain it, all of which is scalable as uptake increases.</p>
 
-        
+
+        <h2 id="product_description" class="section">Product Description</h2>
+
+        <h4>Hardware Description</h4>
+
+        <p style="text-align: justify;">The water tank level hardware componentry consists of a small single-board computer, with sensor, connectivity and power peripherals:</p>
+            <ul style="text-align: justify;">
+            <li>Raspberry Pi single-board computer is mounted in a housing externally to the tank in a suitable position.</li>
+            <li>Ultrasonic sensor is installed internally in the tank, above the full water line in order to remain unsubmerged, and is connected to the Raspberry-Pi.</li>
+            <li>Raspberry Pi unit contains connectivity options including WiFi and the choice of a cellular modem, dependent on the model the customer purchases.</li>
+            <li>Raspberry Pi and sensor housings require a rugged design to ensure it will endure harsh Australian elements, being waterproof, dustproof and UV resistant.</li>
+            <li>Solar panel power integration will also be available, connected to the main housing and Raspberry Pi unit, to enable a fully self-sufficient setup.</li>
+            </ul>
+
+        <h4>Hardware Functions</h4>
+
+        <p style="text-align: justify;">The hardware will function to measure the water tank level, and transmit this via an internet connection to backend data storage and processing servers:</p>
+        <ul style="text-align: justify;">
+            <li>Ultrasonic sensor measures water levels by taking accurate distance measurements from its location mounted above the water line to the water’s surface. This reading is able to be accurately converted into a water quantity, represented in volume (litres) and as tank level percentage.</li>
+            <li>Deriving the tank level and water quantity from this distance measurement requires some details to be provided by users. Upon installation the user is required to conduct an initial calibration. This is controlled through the application, by providing the following simple details;</li>
+            <ul style="text-align: justify;">
+            <li>Tank’s maximum capacity in litres</li>
+            <li>Height of the sensor from the bottom of the tank (i.e. the distance which would indicate an empty tank)</li>
+            <li>Height of the sensor from the full water line (i.e. the distance which would indicate a full tank)</li>
+            </ul>
+            <li>This calibration enables the distance measurement from the water’s surface to the sensor to be derived to calculate the tank’s accurate current water level and quantity.
+            </ul>
+
+        <h4>Onboard Processing</h4>
+
+        <p style="text-align: justify;">Raspberry Pi device will carry out minimal onboard processing, with primary functions required to:</p>
+        <ul style="text-align: justify;">
+            <li>Carry out intermittent sensor readings (i.e. measure tank levels) either at scheduled intervals or on-demand when requested by users.</li>
+            <li>Maintain internet connectivity either via WiFi or cellular connection, dependent on model.</li>
+            <li>Transmit sensor measurements to cloud-based servers for storage and onwards processing.</li>
+            </ul>
+
+        <h4>Server Processing</h4>
+
+        <p style="text-align: justify;">Data storage and processing will be conducted on cloud-based servers, undertaking the following functions:</p>
+        <ul style="text-align: justify;">
+            <li>Receive and record sensor readings transmitted by internet-connected Raspberry Pi devices.</li>
+            <li>Pass live and historic readings to application users (tank owners and emergency services).</li>
+            <li>Maintain last-recorded records of water levels. This element is critical in the event of fire, where internet connections (particularly fixed lines) may be lost, in order to maintain visibility of water supplies by emergency services.</li>
+            <li>Access control. This element is important to protect the privacy and integrity of the information stored. As well as controlling access to authorised users accessing the mobile or web applications, access control of the sensor devices must also be maintained to protect the integrity of the service.</li>
+            <li>End-to-end security. Due to the sensitivity of the data containing personal details, it would be necessary for the data traffic to be protected in transit via end-to-end encryption, accessible only by authorised parties.</li>
+            </ul>
+
+        <h4>Application Functions – Tank Owner</h4>
+
+        <p style="text-align: justify;">Tank owners will have access to the live and historic tank level readings for their registered tank level indicators. This information will be accessed via a web-based or mobile application, with the following functions:</p>
+        <ul style="text-align: justify;">
+            <li>Visibility of water levels (percentage) and quantity (litres) in their connected water tanks. Where multiple tanks are present on a property, the application will display separate information for each tank, as well as combined total readings for all registered devices on the property.</li>
+            <li>Data is presented in visually appealing graphs and text form, on either the mobile or web application. The design goals are to present the information clearly, in an attractive and easy to read format.</li>
+            <li>Historical analysis tools will display users’ trends of water usage such as:</li>
+            <ul style="text-align: justify;">
+                <li>Average water use per day, week, month and year</li>
+                <li>Identified peak periods of water use</li>
+            </ul>
+            <li>Predictive analysis will also be possible through extrapolation of historical data:</li>
+            <ul style="text-align: justify;">    
+                <li>Predicted days, weeks, months or years of water supply remaining, based off historical usage</li>
+                <li>Supplementing the predictive analysis, the applications will feature ‘Tips’ recommending water saving habits</li>
+            </ul>
+            <li>User guides within the application will provide necessary information to set up and use the system:</li>
+            <ul style="text-align: justify;">    
+                <li>Tank calibration tool requiring initial entry of tank volume and sensor height readings required for the sensor to correctly report water volume and level</li>
+                <li>Troubleshooting guide with FAQ and common issue resolutions</li>
+            </ul>
+            <li>General fire and emergency planning guidance, as well as links to local and state emergency applications and information, including:</li>
+            <ul style="text-align: justify;">
+                <li>Fire and emergency preparation, planning and response with actions to take</li>
+                <li>Evacuation plan templates</li>
+                <li>Emergency response templates for handling of livestock, possessions and other assets</li>
+            </ul>
+            <li>Customer support functions, with options to email, call, or message in the case of issues with software or hardware.</li>
+            </ul>
+
+        <h4>Application Functions – Emergency Services</h4>
+
+        <p style="text-align: justify;">Emergency services will have privileged access to separate functions of the applications, specific to their requirements. Whereas tank owners only have visibility of their own tanks, emergency services will have access to all users’ water supply together with other relevant information:</p>
+
+        <ul style="text-align: justify;">
+            <li>Map-based user interface will report water availability. Users are able to ‘zoom in’ to progressively view a greater fidelity of information presented on the map, displaying water supply information as follows:</li>
+            <ul style="text-align: justify;">
+                <li>Total litres/percentage available within the local government area</li>
+                <li>Total litres/percentage available within a selected area</li>
+                <li>Individual tank litres/percentage available, indicated with an accurately positioned pin</li>
+            </ul>
+            <li>In addition to water availability information, emergency service access will allow selection of individual tanks or properties to display additional information required for the planning and response in the event of fires:</li>
+            <ul style="text-align: justify;">
+                <li>Contact details of the property/tank owner</li>
+                <li>Ability to initiate an alert to the owner that the water is required</li>
+                <li>Messaging and communication with the property/tank owner</li>
+            </ul>
+            </ul>
         <h2 id="roles" class="section">Roles</h2>
         <p style="text-align: justify">
             We made the decision not to delegate specific roles to each member, as we believed the work could be split
