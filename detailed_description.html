@@ -425,6 +425,22 @@
 
         <h2 id="testing" class="section">Testing</h2>
 
+        <p style="text-align: justify;">Testing of HydroKnow requires the separate elements of hardware, backend server processing, and user applications to be verified individually as well as integrated in the overall service. Within each of these elements, testing will further be divided into stages throughout the entire development cycle in accordance with accepted processes of unit, integration, system, and acceptance testing (Software Testing Fundamentals 2021). Testing success will be a measure of both the accuracy and reliability of the information HydroKnow provides, but just as important by verifying that the service meets the operational requirements of the firefighters using the service, which will be provided in feedback and user stories. Verification and validation that a product meets the requirements of users and stakeholders is a fundamental objective in testing (ISTQB 2018).<br><br>
+
+        While the functional components of HydroKnow hardware and software are not overly complex, the risk of any malfunction, particularly service-wide issues such as backend failures, is firefighters either not receiving critical water supply information, or perhaps worse, receiving incorrect information. Due to this critical element, a robust test plan is required.<br><br>
+
+        Primary hardware functions are being tested through iterative developments of the product, along the following stages:
+        <ol style="text-align: justify;">
+            <li>Distance readings are transmitted from sensor to Raspberry Pi</li>
+            <li>Raspberry Pi records and derives distance readings accurately and consistently</li>
+            <li>Raspberry Pi transmits distance readings to central server for backend processing</li>
+        </ol>
+        Application testing at this time has been limited to validating suitability of the mockup user interface, with coding of the back and front end scheduled for later stages of the project. In order to properly validate HydroKnow’s end-user experience, external trials and user testing will be required.<br><br>
+
+        Rural firefighting services will be approached to conduct testing, initially in a training and use-case study, prior to live field testing. By implementing this staged framework, testing will commence well in advance of the final product being released so that issues and enhancements can be identified early and incorporated into the product’s final design.<br><br>
+
+        Tank owner testers will be targeted within the same locality of test firefighters in order to establish and test the functions between the user types. Offering free devices and promoting the broader community benefit of the service is expected to attract testers. We aim to deploy at least 20 devices across the first region for testing.<br><br>
+        </p>
         <h2 id="timeframe" class="section">Timeframe</h2>
 
         <h2 id="risks" class="section">Risks</h2>
