@@ -395,12 +395,16 @@
 
             Cellular: Most users are expected to benefit from cellular connectivity which will be available by upgrade. Cellular connectivity is possible through commercially available Raspberry Pi modules and serviced through established telecommunications networks via customer account and SIM.<br><br>
 
-            Low Power Wide Area Networking (LPWAN) technology is particularly suited to IoT sensors that don’t require a high data rate, and it offers advantages of low power consumption and cost (Palaez 2017). Narrowband IoT (NB-IoT) is one such standard particularly suited to the HydroKnow use case. Modems such as SIM7020E NB-IoT HAT for Raspberry Pi enable this connectivity on Raspberry Pi. Low data SIM plans suited to IoT implementation are also available that would suit HydroKnow implementation, such as Telstra IoT Data SIM plans.
+            Low Power Wide Area Networking (LPWAN) technology is particularly suited to IoT sensors that don’t require a high data rate, and it offers advantages of low power consumption and cost (Palaez 2017). Narrowband IoT (NB-IoT) is one such standard particularly suited to the HydroKnow use case. Modems such as the <a target="blank"
+            href="https://www.iot-store.com.au/products/sim7020e-nb-iot-hat-raspberry-pi">SIM7020E NB-IoT
+            HAT</a> for Raspberry Pi enable this connectivity on Raspberry Pi. Low data SIM plans suited to IoT implementation are also available that would suit HydroKnow implementation, such as <a target="blank"
+            href="https://www.telstra.com.au/small-business/internet-of-things/data-sim-plans">Telstra IoT
+            Data SIM plans</a>.
         </p>
 
         <h4>Cloud Integration</h4>
         <p style="text-align:justify">
-            Integrating the data connection between deployed HydroKnow devices, user and emergency services end-user devices, and cloud-based application servers can be facilitated through most major cloud service providers. AWS and Google Cloud are 2 examples that offer subscription tools with specific functionality to manage IoT devices. Utilising these services simplifies the development and management of the project and provides a scalable platform for further development. The Google IoT Core product is a cost-effective method to manage and scale the HydroKnow service by offering:
+            Integrating the data connection between deployed HydroKnow devices, user and emergency services end-user devices, and cloud-based application servers can be facilitated through most major cloud service providers. AWS and Google Cloud are 2 examples that offer subscription tools with specific functionality to manage IoT devices. Utilising these services simplifies the development and management of the project and provides a scalable platform for further development. The <a target="blank" href="https://cloud.google.com/iot-core">Google Cloud IoT Core</a> product is a cost-effective method to manage and scale the HydroKnow service by offering:
         <ul style="text-align: justify;">
             <li>Device management</li>
             <li>End-to-end security</li>
@@ -413,7 +417,8 @@
 
             Development of the mobile application would best be approached using a common programming language that can support both the iOS and Android platforms. C# (C Sharp) is an object-oriented programming language that can be used to develop on both platforms. The Xamarin framework allows developers to access native iOS and Android capabilities with C# (Chebbi, 2019).<br><br>
 
-            Due to the application’s requirement for accessing server hosted data, the backend functionality controlling it is a vital component. Research indicates this is the most complex technical component of a project of this nature (Dorogokupets 2020). Subscription-based Backend-as-a-Service (BaaS) tools that provision these functions would simplify the project, reducing both the development time and ongoing management overhead. In order to easily integrate with the proposed IoT cloud service provider, utilising Google's Firebase would be a suitable option. These services will facilitate functions such as:
+            Due to the application’s requirement for accessing server hosted data, the backend functionality controlling it is a vital component. Research indicates this is the most complex technical component of a project of this nature (Dorogokupets 2020). Subscription-based Backend-as-a-Service (BaaS) tools that provision these functions would simplify the project, reducing both the development time and ongoing management overhead. In order to easily integrate with the proposed IoT cloud service provider, utilising <a target="blank"
+            href="https://firebase.google.com/">Google's Firebase</a> service would be a suitable option. These services will facilitate functions such as:
             <ul style="text-align: justify;">
                 <li>Data storage</li>
                 <li>Authentication</li>
